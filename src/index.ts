@@ -1,5 +1,7 @@
 import * as types from './types';
 
+import fetch from 'node-fetch';
+
 import { DependencyManager } from './DependencyManager';
 
 import { CONSTANTS } from './constants';
