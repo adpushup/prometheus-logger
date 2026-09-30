@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		/* Target & Module Resolution */
+		"target": "ES2022" /* Output modern, highly optimized JavaScript */,
+		"module": "NodeNext" /* Best choice for modern Node.js module resolution */,
+		"moduleResolution": "NodeNext",
+
+		/* Library Output Settings */
+		"declaration": true /* Crucial: Generates corresponding '.d.ts' files */,
+		"outDir": "./dist" /* Redirects output structure to this directory */,
+		"rootDir": "./src",
+
+		/* Strictness & Code Quality */
+		"strict": true /* Enables all strict type-checking options */,
+		"esModuleInterop": true /* Emits additional JavaScript to ease importing CommonJS modules */,
+		"skipLibCheck": true /* Skip type checking of declaration files (*.d.ts) for speed */,
+		"forceConsistentCasingInFileNames": true,
+		"types": ["node"]
+	},
+	"include": ["src/**/*"] /* Compile only code inside the src folder */,
+	"exclude": ["node_modules", "dist", "**/*.spec.ts"]
+}
